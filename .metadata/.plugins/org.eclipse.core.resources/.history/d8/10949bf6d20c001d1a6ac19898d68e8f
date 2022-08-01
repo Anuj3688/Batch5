@@ -1,0 +1,16 @@
+package com.Hexaware.CMS.Cli;
+
+public class Check {
+	public static void main(String[] args) {
+		int i;
+		i=7;
+		int r;
+		r=8;
+		while (i<=10)
+		{System.out.println(r*i);
+		i=i+2;
+		}
+		
+//		System.out.println(x);
+	}
+}

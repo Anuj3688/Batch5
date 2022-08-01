@@ -1,0 +1,12 @@
+package com.Hexaware.CMS.Cli;
+
+public class Check {
+	public static void main(String[] args) {
+		int d;
+		int c;
+		d=7;
+		c=(5*++d)%3;
+		
+		System.out.println(c+" "+d);
+	}
+}

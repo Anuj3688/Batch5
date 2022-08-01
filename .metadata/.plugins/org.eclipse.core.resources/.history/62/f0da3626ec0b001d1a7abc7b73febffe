@@ -1,0 +1,10 @@
+package com.cwa.bank;
+
+import java.util.HashMap;
+
+public class test {
+	public static void main(String[] args) {
+		String a = "asdgfahgafgSDGFAGB";
+		HashMap<Character,Integer> ans = new HashMap<>();
+	}
+}

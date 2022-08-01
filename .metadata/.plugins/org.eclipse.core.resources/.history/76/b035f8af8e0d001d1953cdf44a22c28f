@@ -1,0 +1,11 @@
+package com.cwa.learn1;
+
+public class Driver {
+
+	public static void main(String[] args) {
+		Learn l1 = new Learn("A",87);
+		new Learn("B",99);
+		System.out.println(l1.name);
+		System.out.println(l1.rollno);
+	}
+}

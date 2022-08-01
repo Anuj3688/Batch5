@@ -1,0 +1,15 @@
+package com.Hexaware.CMS.Cli;
+
+public class Check {
+	public static void main(String[] args) {
+		int a=10, b=20, x=5, y=3;
+		while(a<=b)
+		 { if(a%2==0)
+		 x=x+y;
+		 else
+		 x=x-y;
+		 a++;
+		 }
+		System.out.println(x);
+	}
+}

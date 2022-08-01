@@ -1,0 +1,9 @@
+package com.cwa.learn1;
+
+public class Driver {
+
+	public static void main(String[] args) {
+		Learn l1 = new Learn();
+		System.out.println(l1.name);
+	}
+}

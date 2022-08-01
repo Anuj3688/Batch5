@@ -1,0 +1,15 @@
+package com.cwa.learn1;
+
+public class Learn {
+	String name;
+	int rollno;
+
+	Learn() {
+
+	}
+
+	Learn(String name, int rollno) {
+		this.name = name;
+		this.rollno = rollno;
+	}
+}

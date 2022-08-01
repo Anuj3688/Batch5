@@ -1,0 +1,19 @@
+package com.cwa.learn1;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class SameName {
+	public static void main(String[] args) {
+		List<String> a = new ArrayList<>();
+		a.add("Anuj");
+		a.add("Rahul");
+		a.add("Mounish");
+		a.add("Raju");
+		a.add("khadar");
+		a.add("Khadar");
+		a.add("Animesh");
+		Set<String> a = new HashSet<>();
+		
+	}
+}

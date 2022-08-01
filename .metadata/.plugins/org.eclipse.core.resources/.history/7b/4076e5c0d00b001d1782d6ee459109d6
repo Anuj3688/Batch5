@@ -1,0 +1,19 @@
+package com.cwa.bank;
+
+public class Bank {
+	private String aName;
+	private int accNumber;
+	private double accBalance;
+	private String type;
+	public Bank() {
+		
+	}
+	public Bank(String aName, int accNumber, double accBalance, String type) {
+		super();
+		this.aName = aName;
+		this.accNumber = accNumber;
+		this.accBalance = accBalance;
+		this.type = type;
+	}
+	
+}

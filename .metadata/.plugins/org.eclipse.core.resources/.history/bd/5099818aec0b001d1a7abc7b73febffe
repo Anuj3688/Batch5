@@ -1,0 +1,15 @@
+package com.cwa.bank;
+
+import java.util.HashMap;
+
+public class test {
+	public static void main(String[] args) {
+		String a = "asdgfahgafgSDGFAGB";
+		HashMap<Character,Integer> ans = new HashMap<Character,Integer>();
+		for(int i=0 ; i<a.length() ; i++) {
+			if(!ans.containsKey(a.charAt(i))) {
+				ans.put(a.charAt(i),1);
+			}
+		}
+	}
+}

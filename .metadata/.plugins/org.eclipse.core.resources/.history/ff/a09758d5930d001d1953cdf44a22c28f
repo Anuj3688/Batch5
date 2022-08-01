@@ -1,0 +1,26 @@
+package com.cwa.learn1;
+
+import java.util.List;
+
+public class Driver {
+	static{
+		System.out.println("hey I am static");
+	}
+	public static void main(String[] args) {
+		///
+		Learn l1 = new Learn();
+		System.out.println(l1.name);
+		System.out.println(l1.rollno);
+		int[] a = new int[15];
+		a[0]=0;
+		System.out.println(a[0]);
+		
+		List<Integer> a1 = new ArrayList<>();
+		a1.add(1);
+		System.out.println(a1.get(0));
+	}
+	
+	public static void check() {
+		
+	}
+}

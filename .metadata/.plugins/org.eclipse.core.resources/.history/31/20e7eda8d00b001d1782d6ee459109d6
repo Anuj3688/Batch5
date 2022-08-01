@@ -1,0 +1,8 @@
+package com.cwa.bank;
+
+public class Bank {
+	private String aName;
+	private int accNumber;
+	private double accBalance;
+	private String type;
+}

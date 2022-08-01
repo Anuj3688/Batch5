@@ -1,0 +1,31 @@
+package com.cwa.bank;
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.Statement;
+import java.util.Scanner;
+
+public class BankDriver {
+	private static Connection con;
+	private static Statement stat;
+	private static ResultSet rs;
+	private static Scanner sc;
+	private static String query;
+	private static PreparedStatement ps;
+	
+	public static void main(String[] args) {
+		Bank b1 = new Bank();
+		b1.createAccount("Anuj Tiwari", 2937542, 10000, "Salary");
+		
+		try {
+			Class.forName("com.mysql.cj.jdbc.Driver");
+			con = DriverManager.getConnection("jdbc:mysql://localhost:3306/project", "root", "root");
+		} catch (ClassNotFoundException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+	}
+}

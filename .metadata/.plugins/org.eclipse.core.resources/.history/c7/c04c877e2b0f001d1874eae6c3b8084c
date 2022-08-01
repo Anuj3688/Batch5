@@ -1,0 +1,23 @@
+package com.cwa.learn1;
+
+public class Code_Text33 {
+	public static boolean contains23(int num) {
+		b4 = False
+			    b5 = False
+			    while number2 > 0:
+			        r = number2 % 10
+			        number2 //= 10
+			        if (r == 4):
+			            b6 = True
+			        if (r == 5):
+			            b7 = True
+			    if (b4 == True and b4 == True):
+			        return True
+			    else:
+			        return False
+	}
+
+	public static void main(String[] args) {
+
+	}
+}

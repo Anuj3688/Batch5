@@ -1,0 +1,86 @@
+package com.cwa.base;
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.sql.Statement;
+import java.util.Scanner;
+
+public class JDBC1 {
+
+	private static Connection con;
+	private static Statement stat;
+	private static ResultSet rs;
+	private static Scanner sc;
+	private static String query;
+
+	public static void openConnections() {
+		sc = new Scanner(System.in);
+		try {
+			con = DriverManager.getConnection("jdbc:mysql://localhost:3306/shop", "root", "root");
+			stat = con.createStatement();
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}
+	}
+
+	public static void closeConnections() {
+		try {
+			con.close();
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}
+		sc.close();
+	}
+
+	public static void main(String[] args) {
+
+		try {
+			Class.forName("com.mysql.cj.jdbc.Driver");
+			openConnections();
+
+		} catch (Exception e) {
+			System.out.println(e);
+		}
+
+		int a = 0;
+
+		while (true) {
+			System.out.println("Select from any one of the below values");
+			System.out.println("1. Add Data");
+			System.out.println("2. Show Data");
+			System.out.println("3. Search single data");
+			System.out.println("4. Update Data");
+			System.out.println("5. Exit");
+			a = sc.nextInt();
+
+			switch (a) {
+			case 1: {
+				System.out.println("Enter your UserID and Password");
+				String val1 = sc.next();
+				String val2 = sc.next();
+				query = "insert into table values(" + val1 + val2 + ")";
+				int b = stat.executeUpdate(query);
+				System.out.println(b + " Sccessfully Executed");
+				break;
+			}
+			case 2: {
+				break;
+			}
+			case 3: {
+				break;
+			}
+			case 4: {
+				break;
+			}
+
+				if (a == 5)
+					break;
+
+			}
+			closeConnections();
+
+		}
+	}
+}

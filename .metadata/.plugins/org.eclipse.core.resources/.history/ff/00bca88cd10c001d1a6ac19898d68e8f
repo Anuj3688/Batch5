@@ -1,0 +1,16 @@
+package com.Hexaware.CMS.Cli;
+
+public class Check {
+	public static void main(String[] args) {
+		float x = 9, y = 5;
+		int z = (int) (x / y);
+		switch (z) {
+		case 1:
+			x = x + 2;
+		case 2:
+			x = x + 3;
+		default:
+			x = x + 1;
+		}
+	}
+}

@@ -1,0 +1,24 @@
+package com.cwa.learn1;
+
+import java.util.ArrayList;
+import java.util.HashSet;
+import java.util.List;
+import java.util.Set;
+
+public class SameName {
+	public static void main(String[] args) {
+		List<String> a = new ArrayList<>();
+		a.add("Anuj");
+		a.add("Rahul");
+		a.add("Mounish");
+		a.add("Raju");
+		a.add("khadar");
+		a.add("Animesh");
+		a.add("Animesh");
+		a.add("Anuj");
+		for (int i = 0; i < a.size(); i++) {
+			String a1 = a.get(i);
+			
+		}
+	}
+}
